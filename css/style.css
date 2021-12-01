@@ -71,8 +71,58 @@ body {
 
 .chat-area {
   width: 90%;
-  min-height: 65vh;
-  background-color: rgba(238, 78, 250, 0.2);
+  min-height: 60vh;
+  background-color: #391048;
   margin: auto;
   border-radius: 5px;
+  padding: 10px;
 }
+
+@media (max-width: 650px) {
+  .chat-area {
+    min-height: 65vh;
+  }
+}
+
+.single-msg-container {
+  width: 90%;
+  padding: 8px;
+  border-radius: 8px;
+  background-color: #ee4efa;
+  border: 1px solid #7900ff;
+  color: #0b001c;
+  display: flex;
+  align-items: center;
+}
+
+.msg-img-wrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 50px;
+}
+
+.msg-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin: 0 20px 0 0;
+}
+
+.msg-text-wrapper {
+  margin-left: 15px;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  width: 100%;
+}
+
+small {
+  margin-top: 5px;
+  color: #391048;
+  font-size: 14px;
+}
+
+/* set all of the previous 5 classes to left----
+then copy and paste these classes with right---
+in order to flip the properties for each user
+in the chat area */
