@@ -1,3 +1,4 @@
+/* #ee4efa */
 * {
   box-sizing: border-box;
 }
@@ -5,7 +6,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #0b001c;
+  background-color: #faedff;
   min-height: 100vh;
 }
 
@@ -15,16 +16,16 @@ body {
 }
 
 .logo-section {
-  margin: 20px;
+  margin: 30px 0 20px;
   text-align: center;
 }
 
 .logo-img {
-  width: 100px;
+  width: 60px;
 }
 
 .logo-text {
-  width: 210px;
+  width: 160px;
 }
 
 .icon-section {
@@ -36,16 +37,6 @@ body {
   border: 2px solid #ee4efa;
   border-radius: 4px;
   margin: 20px 25px 10px;
-}
-
-.chat-icon {
-  width: 115px;
-  padding: 6px 18px;
-}
-
-.profile-icon {
-  width: 135px;
-  padding: 4.5px 15px;
 }
 
 @media (max-width: 420px) {
@@ -70,12 +61,14 @@ body {
 }
 
 .chat-area {
-  width: 90%;
-  min-height: 60vh;
-  background-color: #391048;
+  width: 65%;
+  min-height: 80vh;
+  /* background-color: #391048; */
+  border: 3px solid #ee4efa;
   margin: auto;
   border-radius: 5px;
-  padding: 10px;
+  padding: 10px 20px;
+  position: relative;
 }
 
 @media (max-width: 650px) {
@@ -84,33 +77,36 @@ body {
   }
 }
 
-.single-msg-container {
+.left-msg-container {
   width: 90%;
-  padding: 8px;
+  padding: 5px;
   border-radius: 8px;
-  background-color: #ee4efa;
-  border: 1px solid #7900ff;
+  background-color: #fff;
+  border: 2px solid #f9baff;
   color: #0b001c;
   display: flex;
   align-items: center;
+  margin-bottom: 10px;
 }
 
-.msg-img-wrapper {
+.left-img-wrapper {
   display: flex;
   flex-direction: column;
   max-width: 50px;
 }
 
-.msg-img {
+.left-msg-img {
   width: 40px;
   height: 40px;
   border-radius: 50%;
   margin: 0 20px 0 0;
+  border: 3px solid #fbd1ff;
 }
 
-.msg-text-wrapper {
+.left-msg-text-wrapper {
+  color: #5a1773;
   margin-left: 15px;
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 600;
   letter-spacing: 1px;
   width: 100%;
@@ -119,10 +115,80 @@ body {
 small {
   margin-top: 5px;
   color: #391048;
-  font-size: 14px;
+  font-size: 13px;
 }
 
 /* set all of the previous 5 classes to left----
 then copy and paste these classes with right---
 in order to flip the properties for each user
 in the chat area */
+
+.right-msg-container {
+  width: 90%;
+  padding: 5px;
+  border-radius: 8px;
+  background-color: #fff;
+  border: 2px solid #f9baff;
+  color: #0b001c;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  margin-bottom: 10px;
+  margin-left: auto;
+}
+
+.right-img-wrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 50px;
+}
+
+.right-msg-img {
+  width: 40px;
+  height: 40px;
+  border: 3px solid #fbd1ff;
+  border-radius: 50%;
+  margin: 0 20px 0 0;
+}
+
+.right-msg-text-wrapper {
+  color: #5a1773;
+  margin-left: 15px;
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  width: 100%;
+}
+
+.send-container {
+  width: 90%;
+  min-width: 200px;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-evenly;
+}
+
+input:focus {
+  outline: none;
+}
+
+input[type="text"] {
+  color: #5a1773;
+  font-size: 17px;
+  border: 3px solid #ee4efa;
+  width: 80%;
+  height: 42px;
+
+  border-radius: 5px;
+}
+
+i {
+  background-color: #ee4efa;
+  padding: 10px;
+  margin: 3px;
+  border-radius: 50%;
+  color: #fff;
+}
